@@ -1,5 +1,5 @@
-import { combineReducers } from 'redux';
-import { createStore } from 'redux';
+import { combineReducers, createStore, applyMiddleware } from 'redux';
+import ReduxThunk from 'redux-thunk';
 
 import FirstReducer from './FirstReducer'
 
@@ -7,4 +7,4 @@ const reducers = combineReducers({
     first: FirstReducer
 });
 
-export default store = createStore(reducers);
+export default store = createStore(reducers, {}, applyMiddleware(ReduxThunk));

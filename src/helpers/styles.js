@@ -33,5 +33,19 @@ export const styles = StyleSheet.create({
     rowCenteredCont: {
         flexDirection: 'row',
         alignItems: 'center'
-    }
+    },
+    fullCenteredCont: {
+        justifyContent: 'center',
+        alignItems: 'center'
+    },
+    containedImg: {
+        width: '100%',
+        height: '100%',
+        resizeMode: 'contain'
+    },
+    coveredImg: {
+        width: '100%',
+        height: '100%',
+        resizeMode: 'cover'
+    },
 })

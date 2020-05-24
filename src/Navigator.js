@@ -1,9 +1,9 @@
 import { createStackNavigator, TransitionPresets } from 'react-navigation-stack';
 import { createAppContainer } from 'react-navigation';
 
-import { screenPath } from '../helpers'
+import { screenPath } from './helpers'
 
-import InitialScreen from './Initial/InitialScreen'
+import InitialScreen from './NavigationScreens/Initial/InitialScreen'
 
 const Navigator = createStackNavigator({
 
